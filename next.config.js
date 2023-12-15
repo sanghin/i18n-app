@@ -5,8 +5,17 @@
  **/
 const nextConfig = {
   i18n: {
-    locales: ['en', 'fr', 'nl'],
-    defaultLocale: 'en',
+    locales: ['fr', 'en'],
+    defaultLocale: 'fr',
+    localeDetection: false,
+    domains: [{
+      "domain": "dev.local.fr",
+      "defaultLocale": "fr"
+    },
+    {
+      "domain": "dev.local.us",
+      "defaultLocale": "en"
+    },],
   },
 }
 
